@@ -62,9 +62,8 @@
     <ImageView
         android:id="@+id/bc_blanco_redondo"
         android:layout_width="411dp"
-        android:layout_height="479dp"
+        android:layout_height="492dp"
         android:layout_marginTop="200dp"
-        android:layout_marginBottom="5dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -208,8 +207,8 @@
         android:id="@+id/ic_floragato"
         android:layout_width="109dp"
         android:layout_height="102dp"
-        android:layout_marginEnd="150dp"
-        android:layout_marginBottom="32dp"
+        android:layout_marginEnd="120dp"
+        android:layout_marginBottom="40dp"
         app:layout_constraintBottom_toBottomOf="@+id/bc_blanco_redondo"
         app:layout_constraintEnd_toStartOf="@+id/ic_fuecoco"
         app:layout_constraintHorizontal_bias="0.5"
@@ -220,7 +219,7 @@
         android:id="@+id/ic_fuecoco"
         android:layout_width="109dp"
         android:layout_height="102dp"
-        android:layout_marginBottom="32dp"
+        android:layout_marginBottom="40dp"
         app:layout_constraintBottom_toBottomOf="@+id/bc_blanco_redondo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -231,23 +230,53 @@
         android:id="@+id/tv_floragato"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="150dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="100dp"
         android:text="@string/nombre_anterior"
-        app:layout_constraintBottom_toBottomOf="@+id/bc_blanco_redondo"
         app:layout_constraintEnd_toStartOf="@+id/tv_fuecoco"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageButton"
         app:layout_constraintTop_toBottomOf="@+id/ic_floragato" />
 
     <TextView
         android:id="@+id/tv_fuecoco"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
         android:text="@string/nombre_siguiente"
-        app:layout_constraintBottom_toBottomOf="@+id/bc_blanco_redondo"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton2"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/tv_floragato"
         app:layout_constraintTop_toBottomOf="@+id/ic_fuecoco" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/btn_redondo"
+        android:src="@drawable/flecha_adelante"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tv_fuecoco"
+        app:layout_constraintTop_toBottomOf="@+id/ic_fuecoco" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/btn_redondo"
+        android:src="@drawable/flecha_atras"
+        app:layout_constraintEnd_toStartOf="@+id/tv_floragato"
+        app:layout_constraintHorizontal_bias="0.07"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ic_floragato" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

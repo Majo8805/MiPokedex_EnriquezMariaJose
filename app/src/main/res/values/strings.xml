@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">MiPokedex_EnriquezMariaJose</string>
+    <string name="nombre">Meowscarada</string>
+    <string name="num_pokedex">N.° 0908</string>
+    <string name="descripcion">Se sirve de la luz que reflejan los tricomas de su manto de hojas para camuflar la vid y crear la ilusión óptica de que la flor flota en el aire.</string>
+    <string name="nombre_anterior">Floragato N.° 0907</string>
+    <string name="nombre_siguiente">Fuecoco N.° 0909</string>
+    <string name="altura">1,5 m</string>
+    <string name="peso">31,2 kg</string>
+    <string name="habilidad">Espesura</string>
+    <string name="nombre_altura">Altura</string>
+    <string name="nombre_habilidad">Habilidad</string>
+    <string name="nombre_peso">Peso</string>
 </resources>
